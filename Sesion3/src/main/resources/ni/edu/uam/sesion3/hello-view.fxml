@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="500.0" minWidth="300.0" prefHeight="500.0" prefWidth="348.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.sesion3.StudentController">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Universidad Americana">
+      <font>
+         <Font name="Arial" size="18.0" />
+      </font></Label>
+   <Label text="Registro de notas">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font>
+   </Label>
+   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: blue; -fx-border-width: 1;">
+      <children>
+         <VBox prefHeight="200.0" prefWidth="256.0">
+            <children>
+               <Label text="Nombre del estudiante:" />
+               <TextField fx:id="txtNombre">
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+               </TextField>
+               <Label text="Calificacion" />
+               <TextField fx:id="txtCalificacion" />
+               <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#saveButtonClicked" text="Guardar!" />
+               <Label text="Promedio:" />
+            </children>
+         </VBox>
+      </children>
+   </Pane>
+    <Button fx:id="btn" onAction="#onHelloButtonClick" text="Hello!" />
+</VBox>
