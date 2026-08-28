@@ -22,7 +22,7 @@ public class HelloController {
 
     @FXML
     public void initialize() {
-        // Carga del logo de Instagram desde la carpeta resources
+        // Carga del logo de la Universidad desde la carpeta resources
         InputStream stream = getClass().getResourceAsStream("uamlogo.png");
         if (stream != null) {
             Image miImagen = new Image(stream);
